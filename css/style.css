@@ -267,6 +267,10 @@ div.btn-group {
     background-color: #D85B39;
 }
 /*index_link*/
+.index_link{
+    padding: 30px 0;
+    background: #FFF3DA;
+}
 .index_link a{
     color: #A74624;
     font-weight: bold;
