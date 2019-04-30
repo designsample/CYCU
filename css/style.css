@@ -605,5 +605,8 @@ footer{
     .parallax-wrap{
     	margin-bottom: 70px;
     }
+    .index_footerSubRight{
+    	padding-top: 20px;
+    }
 
 }
