@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="242.43px" height="162px" viewBox="0 0 242.43 162" enable-background="new 0 0 242.43 162" xml:space="preserve">
+<g>
+	<g>
+		<defs>
+			<polygon id="_x3C_路径_x3E_" points="32.52,1 241.215,1 209.91,161 1.215,161 			"/>
+		</defs>
+		<defs>
+			<polygon id="SVGID_1_" points="32.52,1 241.215,1 209.91,161 1.215,161 			"/>
+		</defs>
+		
+			<use xlink:href="#_x3C_�_x00B7__x00AF_�_x00BE__x0084__x3E_"  overflow="visible" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF"/>
+		<clipPath id="_x3C_路径_x3E__1_">
+			<use xlink:href="#_x3C_�_x00B7__x00AF_�_x00BE__x0084__x3E_"  overflow="visible"/>
+		</clipPath>
+		<clipPath id="SVGID_2_" clip-path="url(#_x3C_路径_x3E__1_)">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<radialGradient id="SVGID_3_" cx="210.4316" cy="160.6719" r="208.4397" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#ED7D0B"/>
+			<stop  offset="1" style="stop-color:#D658A5"/>
+		</radialGradient>
+		<path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_3_)" d="M242.43,192V0
+			c0,0,50.952,0-53.43,0S0,84.618,0,189C0,205.824,242.43,192,242.43,192z"/>
+	</g>
+	<path fill="#A74624" d="M210.733,162H0L31.696,0H242.43L210.733,162z M2.43,160h206.657L240,2H33.343L2.43,160z"/>
+</g>
+</svg>
