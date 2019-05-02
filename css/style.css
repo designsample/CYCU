@@ -895,8 +895,6 @@ footer {
         margin-top: 118px;
     }
 
-
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -984,6 +982,9 @@ footer {
     .owl-nav .owl-next {
         right: -50px;
         width: 40px;
+    }
+    .index-Calander .container{
+        padding-left: 70px;
     }
 
 
