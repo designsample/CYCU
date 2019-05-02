@@ -184,10 +184,8 @@ a:focus {
 .parallaxB {
     /* The image used */
     background-image: url("../img/bg_0.jpg");
-
     /* Set a specific height */
     min-height: 450px;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -202,9 +200,11 @@ a:focus {
 }
 
 .parallax_top {
-    position: absolute;
+    position: relative;
 }
-
+.parallax-wrap {
+    margin-bottom: 40px;
+}
 /*按鈕*/
 .btn-group-wrap {
     text-align: center;
@@ -309,7 +309,6 @@ div.btn-group {
 .index_link a:focus {
     color: #D85B39;
 }
-
 /*月曆*/
 .index-Calander {
     margin-bottom: 80px;
@@ -536,14 +535,6 @@ footer {
         position: absolute;
     }
 
-    .parallax_top {
-        height: 300px;
-    }
-
-    .parallax-wrap {
-        margin-bottom: 120px;
-    }
-
     .index-adNews .carousel-inner .item {
         height: 500px;
     }
@@ -598,7 +589,12 @@ footer {
         width: 220px;
         height: auto;
     }
-
+    .btn-group a.btn-mainNav {
+        padding: 2px 8px 5px 8px;
+    }
+    .btn-group a.btn-mainNav p{
+        margin-top: -10px;
+    }
     .index-adNews .carousel-inner .item {
         height: 300px;
     }
@@ -734,6 +730,10 @@ footer {
         width: 100%;
         /*475px*/
     }
+    #mainNav_dropup {
+        margin-top: -50px;
+       
+    }
 
     .parallax #mask {
         width: 100vw;
@@ -748,10 +748,6 @@ footer {
 
     .btn-group a.btn-mainNav {
         padding: 2px 15px 5px 15px;
-    }
-
-    .parallax-wrap {
-        margin-bottom: 120px;
     }
 
     .index-adNews .carousel-inner .item {
@@ -940,7 +936,7 @@ footer {
     }
 
     #mainNav_dropup {
-        margin-top: -110px;
+        margin-top: -120px;
         /*-80px;*/
     }
 
@@ -951,10 +947,6 @@ footer {
     .dropup .dropdown-menu {
         background-color: #ED7D0B;
         width: 202px;
-    }
-
-    .parallax-wrap {
-        margin-bottom: 70px;
     }
 
     .index_footerSubRight {}
