@@ -620,16 +620,16 @@ footer{
     .indexTop-searchGroup {
         float: none;
         left: 441px;
-        top: 0;
+        top: -40px;
         clear: both;
     }
     .navLink-A{
-        top:0;
+        top: -40px;
     }
-
-
-
-
+    .navbar-default.index .navbar-brand{
+        padding-top: 9px;
+        margin-top: 40px;
+    }
 
     .parallaxB {
         /* The image used */
