@@ -362,47 +362,51 @@ body onload="displayImage();" value="Display Random Image"
         <!-- /end of id="mainNav_dropup" class="w-100 parallax_top"-->
     </div>
     <!-- end of class="container-fluid p-0" -->
-    <div class="container index-Calander">
-        <div class="row">
-            <div class="col-xs-12 col-md-3 index-bgCalander">
-                <p>4月</p>
-                <p>24日</p>
-                <img src="img/ic_bgCalander.png">
+    <section class="index-Calander">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 index-bgCalander">
+                    <p>4月</p>
+                    <p>24日</p>
+                    <img src="img/ic_bgCalander.png">
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h3 class="active">總館</h3>
+                    <ul class="list-unstyled m-0">
+                        <li>08:00~22:00</li>
+                        <li class="visible-md visible-lg"><a class="btn-gran" href="">詳細開館時間</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h3 class="active">多媒體中心</h3>
+                    <ul class="list-unstyled m-0">
+                        <li>08:00~21:00</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h3 class="active">地下一樓悅讀室</h3>
+                    <ul class="list-unstyled m-0">
+                        <li>8:00-01:00</li>
+                    </ul>
+                    <h3 class="active">地下一樓自習室</h3>
+                    <ul class="list-unstyled m-0">
+                        <li>8:00-23:00</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-9 hidden-md hidden-lg text-center"><a class="btn-gran" href="">詳細開館時間</a></div>
             </div>
-            <div class="col-xs-12 col-md-3">
-                <h3 class="active">總館開放中</h3>
-                <ul class="list-unstyled m-0">
-                    <li>總館</li>
-                    <li>08:00~22:00</li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <h3 class="active">多媒體中心開放中</h3>
-                <ul class="list-unstyled m-0">
-                    <li>多媒體中心</li>
-                    <li>08:00~21:00</li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <h3 class="active">地下一樓悅讀室開放中</h3>
-                <ul class="list-unstyled m-0">
-                    <li>地下一樓悅讀室</li>
-                    <li>8:00-01:00</li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-md-9 openHours"><a class="btn-gran" href="">詳細開館時間</a></div>
         </div>
-    </div>
+    </section>
     <!-- container index-Calander -->
-    <div class="container-fluid index-adNews">
+    <div class="container index-adNews">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-lg-8">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div id="carousel-indexFirst" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <!-- <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-indexFirst" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-indexFirst" data-slide-to="1"></li>
+    <li data-target="#carousel-indexFirst" data-slide-to="2"></li>
   </ol> -->
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
@@ -429,18 +433,18 @@ body onload="displayImage();" value="Display Random Image"
                         </div>
                     </div>
                     <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <a class="left carousel-control" href="#carousel-indexFirst" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <a class="right carousel-control" href="#carousel-indexFirst" role="button" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
                 <script type="text/javascript">
                 $('.carousel').carousel({
-                    interval: 8000
+                    interval: 10000
                 })
                 </script>
             </div>
@@ -578,7 +582,7 @@ body onload="displayImage();" value="Display Random Image"
                                             </div>
                                         </div>
                                     </div>
-                                    <script type="text/javascript">
+                                    <!-- <script type="text/javascript">
                                     $('.owl-carousel').owlCarousel({
                                         margin: 10,
                                         loop: true,
@@ -596,28 +600,31 @@ body onload="displayImage();" value="Display Random Image"
                                         //               }
                                         //             }
                                     })
+                                    </script> -->
+                                    <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        var owl = $('.owl-carousel');
+                                        owl.owlCarousel({
+                                            margin: 40,
+                                            nav: true,
+                                            loop: true,
+                                            responsive: {
+                                                0: {
+                                                    items: 2
+                                                },
+                                                420: {
+                                                    items: 2
+                                                },
+                                                600: {
+                                                    items: 3
+                                                },
+                                                1000: {
+                                                    items: 4
+                                                }
+                                            }
+                                        })
+                                    })
                                     </script>
-                                    <!-- <script>
-            $(document).ready(function() {
-              var owl = $('.owl-carousel');
-              owl.owlCarousel({
-                margin: 10,
-                nav: true,
-                loop: true,
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  600: {
-                    items: 3
-                  },
-                  1000: {
-                    items: 4
-                  }
-                }
-              })
-            })
-          </script> -->
                                 </div>
                             </div>
                         </section>
@@ -632,20 +639,20 @@ body onload="displayImage();" value="Display Random Image"
     </div>
     <!-- index carousel -->
     <section class="index_link">
-    <div class="container">
-      <div class="row m-0">
-        <h3 class="title pb-10">常用連結</h3>
-        <ul class="list-unstyled list-inline m-0">
-          <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>Services for Foreign Students</a>&emsp;</li>
-          <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>中原大學圖書館行事曆</a>&emsp;</li>
-          <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>中原大學機構典藏</a>&emsp;</li>
-          <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>VOD 隨選視訊系統</a>&emsp;</li>
-          <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>空中英語教室</a>&emsp;</li>
-          <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>資料庫講習</a>&emsp;</li>
-          <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>資料協尋</a>&emsp;</li>
-        </ul>
-      </div>
-    </div>
+        <div class="container">
+            <div class="row m-0">
+                <h3 class="title pb-10">常用連結</h3>
+                <ul class="list-unstyled list-inline m-0">
+                    <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>Services for Foreign Students</a>&emsp;</li>
+                    <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>中原大學圖書館行事曆</a>&emsp;</li>
+                    <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>中原大學機構典藏</a>&emsp;</li>
+                    <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>VOD 隨選視訊系統</a>&emsp;</li>
+                    <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>空中英語教室</a>&emsp;</li>
+                    <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>資料庫講習</a>&emsp;</li>
+                    <li><a href=""><span class="glyphicon glyphicon-bookmark">&ensp;</span>資料協尋</a>&emsp;</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <!-- /index_link -->
     <div class="container index-fatFooter">
@@ -754,8 +761,8 @@ body onload="displayImage();" value="Display Random Image"
                         <p style="font-size: 20px;font-weight:bold;color: #4A4A4A;padding-top: 15px;">瀏覽人次</p>
                         <p style="font-size: 20px;font-weight:bold;color: #BE4709">1234567899</p>
                     </li>
-                  </ul>
-                  <ul class="list-unstyled  text-right">
+                </ul>
+                <ul class="list-unstyled  text-right">
                     <li class="p-0" style="vertical-align: top">
                         <a href="#" class="thumbnail"><img title="臉書" src="img/ic_btn_fb.png"></a>
                         <a href="#" class="thumbnail"><img title="寄信給我們" src="img/ic_btn_mail.png"></a>
@@ -774,12 +781,13 @@ body onload="displayImage();" value="Display Random Image"
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 col-sm-9">
-                    <img src="img/bg_footer.png" width="72px" height="auto" style="display: inline-block;vertical-align: top;padding:0 10px 0 0"><p style="display: inline-block;color:white">地址：32023桃園市中壢區中北路200號<a href=""><img src="img/ic_map.png"></a> 服務專線：(03)2652831<br>
+                    <img src="img/bg_footer.png" width="72px" height="auto" style="display: inline-block;vertical-align: top;padding:0 10px 0 0">
+                    <p style="display: inline-block;color:white">地址：32023桃園市中壢區中北路200號<a href=""><img src="img/ic_map.png"></a> 服務專線：(03)2652831<br>
                         Address：200, Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C.<a href=""><img src="img/ic_map.png"></a><br>
                         版權所有：中原大學張靜愚紀念圖書館 / Copyright ©Chung Yuan Christian University Library
                 </div>
                 <div class="col-xs-12 col-sm-3" style="background: #3D3D3D;padding: 10px">
-                  <p style="color:#ffffff;margin: 0">since 2018/11/25<br>最近更新日期：2019/04/29</p>
+                    <p style="color:#ffffff;margin: 0">since 2018/11/25<br>最近更新日期：2019/04/29</p>
                 </div>
             </div>
         </div>
