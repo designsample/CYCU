@@ -88,13 +88,13 @@ a:focus {
     font-weight: bold;
     color: #FFFFFF;
     background-color: #FFAC59;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFAC59), to(#E9821C));
-    background-image: -webkit-linear-gradient(top, #FFAC59, #E9821C);
-    background-image: -moz-linear-gradient(top, #FFAC59, #E9821C);
-    background-image: -ms-linear-gradient(top, #FFAC59, #E9821C);
-    background-image: -o-linear-gradient(top, #FFAC59, #E9821C);
-    background-image: linear-gradient(to bottom, #FFAC59, #E9821C);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FFAC59, endColorstr=#E9821C);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#faa606), to(#f8a604));
+    background-image: -webkit-linear-gradient(top, #faa606, #f8a604);
+    background-image: -moz-linear-gradient(top, #faa606, #f8a604);
+    background-image: -ms-linear-gradient(top, #faa606, #f8a604);
+    background-image: -o-linear-gradient(top, #faa606, #f8a604);
+    background-image: linear-gradient(to bottom, #faa606, #f8a604);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#faa606, endColorstr=#f8a604);
     /*background-color: #E9821C; background-image: -webkit-gradient(linear, left top, left bottom, from(#E9821C), to(#D7359B));
  background-image: -webkit-linear-gradient(top, #E9821C, #D7359B);
  background-image: -moz-linear-gradient(top, #E9821C, #D7359B);
@@ -255,19 +255,19 @@ div.btn-group {
 }
 
 .dropup .dropdown-menu {
-    background-color: #ED7D0B;
+    background-color: #ED7D0BB3;
 }
 
 .dropup .dropdown-menu>li>a {
     padding: 15px 20px;
     color: #ffffff;
-    background-color: #ED7D0B;
+    /*background-color: #ED7D0B;*/
 }
 
 .dropup .dropdown-menu>li>a:hover,
 .dropup .dropdown-menu>li>a:focus {
     color: #ffffff;
-    background-color: #D85B39;
+    background-color: #0088FBB3;/*#D85B39;*/
     font-weight: bold;
 }
 
@@ -802,7 +802,7 @@ footer {
     }
 
     .dropup .dropdown-menu {
-        background-color: #ED7D0B;
+        background-color: #ED7D0BB3;
         width: 202px;
     }
 
@@ -875,7 +875,7 @@ footer {
         right: 40px;
     }
     .index-Calander .btn-gran{
-        margin-top: 118px;
+        margin-top:20px; 
     }
 
 }
@@ -929,7 +929,7 @@ footer {
     }
 
     .dropup .dropdown-menu {
-        background-color: #ED7D0B;
+        background-color: #ED7D0BB3;
         width: 202px;
     }
 
