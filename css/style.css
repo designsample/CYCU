@@ -442,6 +442,8 @@ h3.active {
 .index-fatFooter .row {
     margin-top: 30px;
     margin-bottom: 30px;
+    background: url(../img/bg-bl9550.png);
+    background-repeat: repeat;
 }
 
 .index-fatFooter ul li {
