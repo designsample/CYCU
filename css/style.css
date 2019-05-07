@@ -260,8 +260,9 @@ div.btn-group {
 
 .dropup .dropdown-menu>li>a {
     padding: 15px 20px;
-    color: #ffffff;
-    /*background-color: #ED7D0B;*/
+    color: #4a4a4a;
+    text-shadow: 0 0 2px #fff;
+    font-weight: bold;
 }
 
 .dropup .dropdown-menu>li>a:hover,
@@ -269,6 +270,7 @@ div.btn-group {
     color: #ffffff;
     background-color: #0088FBB3;/*#D85B39;*/
     font-weight: bold;
+    text-shadow: none;
 }
 
 .btn-orange {
@@ -933,7 +935,7 @@ footer {
     }
 
     .dropup .dropdown-menu {
-        background-color: #ED7D0BB3;
+        background-color: #ffffffe6;
         width: 202px;
     }
 
@@ -953,7 +955,7 @@ footer {
     }
 
     #demos .owl-carousel .item p {
-        width: 240px;
+        width: 168px;
     }
 
     .owl-nav {
