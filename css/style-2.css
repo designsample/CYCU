@@ -267,8 +267,9 @@ div.btn-group {
 .dropup .dropdown-menu>li>a:hover,
 .dropup .dropdown-menu>li>a:focus {
     color: #ffffff;
-    background-color: #0088FBB3;/*#D85B39;*/
+    background-color: #1BEFFFB3;/*#D85B39;*/
     font-weight: bold;
+    text-shadow: none;
 }
 
 .btn-orange {
@@ -439,6 +440,10 @@ h3.active {
 }
 
 /*index-fatFooter*/
+.index-fatFooter{
+    background: url(../img/bg-g9550.png);
+    background-repeat: repeat;
+}
 .index-fatFooter .row {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -929,7 +934,7 @@ footer {
     }
 
     .dropup .dropdown-menu {
-        background-color: #ED7D0BB3;
+        background-color: #D85B39E6;
         width: 202px;
     }
 
@@ -949,7 +954,7 @@ footer {
     }
 
     #demos .owl-carousel .item p {
-        width: 240px;
+        width: 168px;
     }
 
     .owl-nav {
