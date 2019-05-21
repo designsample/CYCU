@@ -16,7 +16,19 @@ a:hover,
 a:focus {
     color: #333333;
 }
+a.color2{
+    color: #be4709!important;
+    text-decoration: none;
+    border:1px solid transparent;
+}
+a.color2:hover,
+a.color2:focus {
+    color:#be4709 !important;/*#ea5923*/
+    border:1px solid #777777;
+    text-decoration: underline!important;
+    text-decoration-color:#ea5923!important;
 
+}
 .navbar-default .navbar-nav>li>a {
     color: #4A4A4A;
 }
@@ -60,7 +72,7 @@ a:focus {
 
 .btn-indesSearch {
     color: #ffffff;
-    background-color: #D0023C;
+    background-color: #be4709;/*#D0023C*/
 }
 
 .btn-indesSearch:hover,
@@ -150,32 +162,24 @@ a:focus {
 }
 
 /*顏色*/
-.navbar-right li a.thumbnail>svg {
-    display: block;
-}
 
-.navbar-right li:nth-child(1) a.thumbnail>svg path,
 .btn-group:nth-child(5) a.btn-mainNav>svg path {
     fill: #A74624;
 }
 
-.navbar-right li:nth-child(2) a.thumbnail>svg path,
 .btn-group:nth-child(1) a.btn-mainNav>svg path,
 .btn-group:nth-child(6) a.btn-mainNav>svg path {
     fill: #7A6416;
 }
 
-.navbar-right li:nth-child(3) a.thumbnail>svg path,
 .btn-group:nth-child(2) a.btn-mainNav>svg path {
     fill: #4B6F22;
 }
 
-.navbar-right li:nth-child(4) a.thumbnail>svg path,
 .btn-group:nth-child(3) a.btn-mainNav>svg path {
     fill: #1E6574;
 }
 
-.navbar-right li:nth-child(5) a.thumbnail>svg path,
 .btn-group:nth-child(4) a.btn-mainNav>svg path {
     fill: #642489;
 }
@@ -478,6 +482,9 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    .navbar.index .navbar-brand>img{
+        width: 280px;
+    }
     nav.navbar.index {
         margin-bottom: 0;
         z-index: 99;
@@ -626,31 +633,35 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .navbar.index .navbar-brand>img{
+        width: 280px;
+    }
     nav.navbar.index {
         height: 141px;
-        background-color: #fff;
+        background-color: rgba(234,89,35,0.15);
         border-color: transparent;
-        border-bottom: 5px solid #F9A605;/*ED7D0B*/
-        /*#A74624*/
+        
         box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
         margin-bottom: 0;
     }
 
-    nav.navbar.index .container-fluid .navbar-right-lg {
+    nav.navbar.index .navbar-right-lg.topMenu {
         margin: 0;
         clear: both;
         right: 15px;
         position: absolute;
         top: 0;
-
     }
-
-    nav.navbar.index .container-fluid .navbar-right-lg li a {
-        padding-bottom: 0;
+    .navbar-right.viewById  {
+        margin: 0;
+        clear: both;
+        right: 15px;
+        position: absolute;
+        top: 55px;
+        /*color: #ED7D0B;*/
     }
-
-    nav.navbar.index .container-fluid ul.navbar-right-lg:nth-of-type(2) {
-        top: 40px;
+    .navbar-right.viewById li a {
+        padding: 10px 15px;
     }
 
     nav.navbar.index .navbar-right li {
@@ -677,29 +688,11 @@ footer {
         transition: background .2s ease-in-out;
     }
 
-    .navbar-right .thumbnail .caption {
-        padding: 0 0 5px 0;
-        margin-bottom: 0;
-        margin-top: -2px;
-        color: #ED7D0B;
-        /*#A74624*/
-    }
-
     .indexTop-searchGroup {
         top: 54px;
         left: -295px;
     }
 
-    .navLink-A {
-        float: none;
-        clear: both;
-        top: 42px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /*置中*/
-    }
 
     .navLink-B {
         top: 42px;
@@ -789,6 +782,15 @@ footer {
 
 
 @media screen and (min-width: 992px) {
+    .navbar-default .navbar-nav>li>a {
+        padding:10px 15px;
+    }
+    .navLink-A {
+        top: 48px;
+    }
+    .navbar-right.viewById{
+        top: 51px;
+    }
     .indexTop-searchGroup {
         top: 54px;
     }
@@ -886,6 +888,10 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+    
+    .navbar.index .navbar-brand>img{
+        width: 411px;
+    }
     .indexTop-searchGroup {
         float: none;
         left: 441px;
@@ -894,7 +900,10 @@ footer {
     }
 
     .navLink-A {
-        top: -40px;
+        top: -35px;
+    }
+    .navbar-right.viewById{
+        top: 97px;
     }
 
     .navbar-default.index .navbar-brand {
