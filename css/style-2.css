@@ -134,6 +134,10 @@ a.color2:focus {
  background-image: -o-linear-gradient(top, #bf6913, #b5247f);
  background-image: linear-gradient(to bottom, #bf6913, #b5247f);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#bf6913, endColorstr=#b5247f);*/
 }
+.btn-mainNav{
+    background: #be4709;
+}
+
 
 /*/btn end*/
 
@@ -143,6 +147,9 @@ a.color2:focus {
 
 .pb-10 {
     padding-bottom: 10px;
+}
+.pv-30{
+    padding:30px 0;
 }
 
 .m-0 {
@@ -185,30 +192,7 @@ a.color2:focus {
 }
 
 /*視差滾動*/
-.parallaxB {
-    /* The image used */
-    background-image: url("../img/bg_0.jpg");
-    /* Set a specific height */
-    min-height: 450px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.parallaxB_mask {
-    width: 100%;
-    top: 475px;
-    position: absolute;
-}
-
-.parallax_top {
-    position: relative;
-}
-.parallax-wrap {
-    margin-bottom: 40px;
-}
 /*按鈕*/
 .btn-group-wrap {
     text-align: center;
@@ -222,7 +206,8 @@ div.btn-group {
 }
 
 .mainNav-wrap a.btn-mainNav {
-    border: 1px solid #A74624;
+    border: 1px solid #ffffff;/*A74624*/
+    background: #be4709;
 }
 
 .btn-group a.btn-mainNav {
@@ -230,9 +215,10 @@ div.btn-group {
 }
 
 .btn-group a.btn-mainNav p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
+    color: #ffffff;
 }
 
 .btn-mainNav {
@@ -271,7 +257,7 @@ div.btn-group {
 .dropup .dropdown-menu>li>a:hover,
 .dropup .dropdown-menu>li>a:focus {
     color: #ffffff;
-    background-color: #1BEFFFB3;/*#D85B39;*/
+    background-color: #be4709;/*#D85B39;*/
     font-weight: bold;
     text-shadow: none;
 }
@@ -356,7 +342,7 @@ h3.active {
 
 /*頁籤*/
 .index-carousel {
-    padding: 50px 0;
+    padding: 30px 0;
     background-image: url(../img/bg_carousel_top.png),
         url(../img/bg_carousel_bottom.png),
         url(../img/bg_carousel.png);
@@ -400,24 +386,6 @@ h3.active {
 .index-adNews .carousel-inner .item img {
     width: 100%;
     height: auto;
-}
-.index-adNews .carousel-caption {
-    position: absolute;
-    padding-top: 15px;
-    top: 100%;
-    text-align: left;
-    text-shadow: none;
-    color: #4A4A4A;
-    margin: 0;
-    left: 0;
-    right: 0;
-    background: #ffffff;
-}
-
-.index-adNews .carousel-caption .title {
-    color: #BE4709;
-    font-size: 18px;
-    margin: 0;
 }
 
 .carousel-control.left,
@@ -508,37 +476,13 @@ footer {
         padding: 0;
         margin: 0;
     }
-
-    .parallaxB {
-        /* The image used */
-        background-image: url("../img/bg_0.jpg");
-
-        /* Set a specific height */
-        min-height: 250px;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center top;
-        background-repeat: no-repeat;
-        /*background-size: cover;*/
-        background-size: 150% auto
-    }
-
-    .parallaxB_mask {
-        width: 100%;
-        top: 235px;
-        position: absolute;
-    }
-
     .index-adNews .carousel-inner .item {
         height: 500px;
     }
-
-
-    .index-adNews .carousel-caption {
-        top: 400px;
-        background: #ffffff;
-        height: 100px;
+    .mainImg{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
     }
 
     #demos .owl-carousel .item {
@@ -592,11 +536,6 @@ footer {
     }
     .index-adNews .carousel-inner .item {
         height: 300px;
-    }
-
-    .index-adNews .carousel-caption {
-        top: 200px;
-        height: 100px;
     }
 
     #demos .owl-carousel .item {
@@ -692,8 +631,15 @@ footer {
         top: 54px;
         left: -295px;
     }
-
-
+    .mainImg{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+    .mainImg img{
+        width: 100%;
+        height: auto;
+    }
     .navLink-B {
         top: 42px;
         /*置中*/
@@ -704,27 +650,8 @@ footer {
         top: 42px;
         /*靠左*/
     }
-
-    .parallax {
-        overflow: hidden;
-        height: 340px;
-        width: 100%;
-        /*475px*/
-    }
     #mainNav_dropup {
-        margin-top: -50px;
        
-    }
-
-    .parallax #mask {
-        width: 100vw;
-        top: 300px;
-        position: absolute;
-    }
-
-    .parallax img {
-        min-height: 340px;
-        width: 100vw;
     }
 
     .btn-group a.btn-mainNav {
@@ -733,11 +660,6 @@ footer {
 
     .index-adNews .carousel-inner .item {
         height: 300px;
-    }
-
-    .index-adNews .carousel-caption {
-        top: 200px;
-        height: 80px;
     }
 
     .index-adNews h3.active {
@@ -796,8 +718,6 @@ footer {
     }
 
     #mainNav_dropup {
-        margin-top: -30px;
-        /*-80px;*/
     }
 
     #mainNav_dropupBtn {
@@ -816,12 +736,6 @@ footer {
     .index-adNews .carousel-inner .item {
         height: 400px;
     }
-
-    .index-adNews .carousel-caption {
-        top: 300px;
-        height: 80px;
-    }
-
     .index-adNews h3.active {
         margin-top: 0;
 
@@ -911,39 +825,16 @@ footer {
         margin-top: 40px;
     }
 
-    .parallaxB {
-        /* The image used */
-        background-image: url("../img/bg_0.jpg");
-
-        /* Set a specific height */
-        min-height: 550px;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-
-    .parallaxB_mask {
-        width: 100%;
-        top: 470px;
-        /*503px;*/
-        position: absolute;
-    }
-
     #mainNav_dropup {
-        margin-top: -120px;
-        /*-80px;*/
+       /* margin-top: -120px;*/
     }
 
     .btn-group a.btn-mainNav {
-        padding: 10px 64px 15px 64px;
+        padding: 10px 60px;
     }
 
     .dropup .dropdown-menu {
-        background-color: #D85B39E6;
+        background-color: rgba(234,89,35,0.6);
         width: 202px;
     }
 
@@ -951,11 +842,6 @@ footer {
 
     .index-adNews .carousel-inner .item {
         height: 500px;
-    }
-
-    .index-adNews .carousel-caption {
-        top: 420px;
-        height: 80px;
     }
 
     #demos .owl-carousel .item {
@@ -967,7 +853,7 @@ footer {
     }
 
     .owl-nav {
-        bottom: 250px;
+        bottom: 270px;
         width: 100%;
     }
 
@@ -979,6 +865,9 @@ footer {
     .owl-nav .owl-next {
         right: -50px;
         width: 40px;
+    }
+    .owl-dots{
+        margin-top: -20px;
     }
     .index-Calander .container{
         padding-left: 70px;
