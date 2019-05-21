@@ -286,6 +286,7 @@ div.btn-group {
 .index-Calander {
     margin-bottom: 80px;
     overflow-x: hidden;
+    background-color: rgb(234,89,35);
 }
 
 .index-bgCalander p:first-child {
@@ -410,11 +411,15 @@ h3.active {
 .index-adNews ul>li:last-of-type a:focus {
     color: #D85B39;
 }
-
+.indexNews li a p{
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /*index-fatFooter*/
 .index-fatFooter{
-    background: url(../img/bg-g9550.png);
-    background-repeat: repeat;
+    background: rgba(234,89,35,0.15);
 }
 .index-fatFooter .row {
     margin-top: 30px;
@@ -422,18 +427,50 @@ h3.active {
 }
 
 .index-fatFooter ul li {
-    padding: 10px 0;
+    padding: 5px 0;
 }
-
+.index-fatFooter ul li a{
+    color: #777777;
+    font-size: 18px;
+    border:1px solid transparent;
+}
+.index-fatFooter ul li a:hover,
+.index-fatFooter ul li a:active,
+.index-fatFooter ul li a:focus
+{
+    border:1px solid #ffffff;
+}
+.index_footerSub a.thumbnail p:hover,
+.index_footerSub a.thumbnail p:active,
+.index_footerSub a.thumbnail p:focus,
+#demos .owl-carousel .item p:hover,
+#demos .owl-carousel .item p:active,
+#demos .owl-carousel .item p:focus{
+color: rgb(190,71,9);
+}
 /*index_footerSub*/
 .index_footerSub {
-    background: #E5E0C1;
+    background: #ea5923;
     padding-top: 20px;
 }
 
 .index_footerSub .thumbnail {
     display: inline-block;
     background-color: transparent;
+    border-color: transparent;
+}
+.index_footerSub .thumbnail:hover,
+.index_footerSub .thumbnail:active,
+.index_footerSub .thumbnail:focus{
+    border-color: transparent;
+}
+.index_footerSub .thumbnail .img-circle{
+    border: 1px solid transparent;
+}
+.index_footerSub .thumbnail .img-circle:hover,
+.index_footerSub .thumbnail .img-circle:active,
+.index_footerSub .thumbnail .img-circle:focus{
+    border:1px solid #ffffff;
 }
 
 .index_footerSub .thumbnail p {
@@ -772,7 +809,7 @@ footer {
     .owl-nav .owl-prev span,
     .owl-nav .owl-next span {
         font-weight: bold;
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .index-bgCalander::before {
@@ -843,7 +880,6 @@ footer {
     .index-adNews .carousel-inner .item {
         height: 500px;
     }
-
     #demos .owl-carousel .item {
         height: 396px;
     }
@@ -853,7 +889,7 @@ footer {
     }
 
     .owl-nav {
-        bottom: 270px;
+        bottom: 310px;
         width: 100%;
     }
 
@@ -871,6 +907,10 @@ footer {
     }
     .index-Calander .container{
         padding-left: 70px;
+    }
+    #carousel-indexFirst{
+        height: 410px;
+        overflow: hidden;
     }
 
 
