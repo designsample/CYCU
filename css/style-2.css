@@ -29,6 +29,21 @@ a.color2:focus {
     text-decoration-color:#ea5923!important;
 
 }
+
+a.color3{
+    color: #be4709!important;
+    text-decoration: none;
+    border:1px solid transparent;
+}
+a.color3:hover,
+a.color3:focus {
+    color:#ffffff !important;/*#ea5923*/
+    border:1px solid #FFFFFF;
+    text-decoration: underline!important;
+    text-decoration-color:#FFFFFF!important;
+    background-color: #be4709;
+
+}
 .navbar-default .navbar-nav>li>a {
     color: #4A4A4A;
 }
