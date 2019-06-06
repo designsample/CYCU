@@ -308,11 +308,11 @@ body{
 }
 
 .index-bgCalander p:first-child {
-    font-size: 28px;
+    font-size: 36px;
     position: absolute;
     color: #A74624;
     font-weight: bold;
-    left: 48px;
+    left: 80px;
 }
 
 .index-bgCalander p:nth-child(2) {
