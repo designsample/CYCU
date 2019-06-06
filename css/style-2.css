@@ -343,7 +343,7 @@ body {
 .index-bgCalander::before {}
 
 h3.active {
-    margin: 20px 0 10px 0;
+    margin: 10px 0 7px 0;
     font-size: 22px;
     color: #A74624;
     font-weight: bold;
@@ -466,7 +466,7 @@ h3.active {
 }
 
 .index-fatFooter ul li {
-    padding: 5px 0;
+    padding:10px 30px;
 }
 
 .index-fatFooter ul li a {
@@ -669,7 +669,7 @@ footer {
     }
 
     .index-adNews {
-        padding-bottom: 30px !Important;
+        padding-bottom: 10px !Important;
         padding-top: 30px !Important;
     }
 
@@ -1045,7 +1045,7 @@ footer {
 #collapse3,
 #collapse4 {
     position: absolute;
-    background: rgba(234, 89, 35, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     width: 100%;
     bottom: -285px;
 }
@@ -1056,14 +1056,14 @@ footer {
     border: 0;
     border-color: none;
     background-color: transparent;
-    color: #fff;
-    font-weight: 500;
+    color: #be4709;
+    font-weight: 700;
 }
 
 .mainNav-sec .panel-title>a:hover,
 .mainNav-sec .panel-title>a:focus {
-    color: #FFF;
-    font-weight: 700;
+    color: #be4709;
+    
 }
 
 .mainNav-first>div>.panel-heading {
