@@ -670,7 +670,7 @@ footer {
 
     .index-adNews {
         padding-bottom: 10px !Important;
-        padding-top: 30px !Important;
+        padding-top: 0px !Important;
     }
 
     .index-carousel {
@@ -1059,27 +1059,40 @@ footer {
     color: #be4709;
     font-weight: 700;
 }
-
+.panel-default a.list-group-item/*:hover,
+.panel-default a.list-group-item:focus,
+.panel-default a.list-group-item:active*/
+{
+    background-color: #ffffff;
+    color: #be4709;
+}
+.panel-default a.list-group-item:hover,
+.panel-default a.list-group-item:focus,
+.panel-default a.list-group-item:active
+{
+    background-color: #be4709;
+    color: #ffffff;
+}
+.panel-default>h4.title a{
+    font-size: 20px;
+}
 .mainNav-sec .panel-title>a:hover,
 .mainNav-sec .panel-title>a:focus {
     color: #be4709;
-    
+}
+.mainNav-sec .container{
+    }
+.mainNav-sec .container .panel{
+
 }
 
 .mainNav-first>div>.panel-heading {
     background-color: #fc8f35;
     text-align: center;
     border-radius: 0;
-   
-    border-bottom:2px solid #FFFFFF;
-     border-left: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
 }
-.mainNav-first>div>.panel-heading:hover,
-.mainNav-first>div>.panel-heading:focus,
-.mainNav-first>div>.panel-heading:active
-{
-    border-bottom:2px solid #777;
-}
+
 .mainNav-first>div>.panel-heading>h4>a {
     color: #fff;
     font-weight: 700;
