@@ -231,7 +231,7 @@ div.btn-group {
 
 .btn-group a.btn-mainNav p {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0;
     color: #ffffff;
 }
@@ -939,7 +939,14 @@ footer {
 
     .dropup .dropdown-menu {
         background-color: rgba(234,89,35,0.6);
-        width: 202px;
+        width: 100%;
+    }
+    .dropup .dropdown-menu::before{
+        content: ' ';
+        height: auto;
+        width: 100px;
+        position: absolute;
+        float: left;
     }
 
     .index_footerSubRight {}
@@ -979,11 +986,60 @@ footer {
         height: 410px;
         overflow: hidden;
     }
+    footer .container,
+    .index_footerSub .container{
+        width: 1200px;
+    }
 
 
 }
-@media screen and (min-width: 1400px) {
-    .container.index-adNews{
-        width: 1292px;
-        }
+@media screen and (min-width: 1420px) {
+    .container.index-adNews,
+    footer .container,
+    .index_footerSub .container{
+        width: calc(100% - 30px);
+        margin:0 auto;
+    }
+}
+#collapse1,#collapse2,#collapse3,#collapse4{
+        position: absolute;
+    background: rgba(234,89,35,0.6);
+    width: 100%;
+    bottom: -205px;
+}
+.mainNav-sec .panel,
+.mainNav-sec .panel-heading,
+.mainNav-sec .list-group-item{
+    border: 0;
+    border-color: none;
+    background-color:transparent;
+    color: #fff;
+    font-weight: 500;
+}
+.mainNav-sec .panel-title>a:hover,
+.mainNav-sec .panel-title>a:focus{
+color: #FFF;
+font-weight: 700;
+}
+.mainNav-first>div>.panel-heading{
+    background-color: #fc8f35;
+    padding: 15px 10px;
+    text-align: center;
+
+}
+.mainNav-first>div>.panel-heading>h4>a{
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    
+}
+.mt-0{
+    margin-top: 0!important;
+}
+.mainNav-first{
+    border:0;
+}
+.mainNav-first>div{
+    width: 1000px;
+    margin: 0 auto;
 }
