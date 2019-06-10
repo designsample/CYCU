@@ -1063,7 +1063,7 @@ footer {
 .panel-default a.list-group-item:focus,
 .panel-default a.list-group-item:active*/
 {
-    background-color: #ffffff;
+    background-color: transparent;
     color: #be4709;
 }
 .panel-default a.list-group-item:hover,
