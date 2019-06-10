@@ -1047,12 +1047,12 @@ footer {
     position: absolute;
     background: rgba(255, 255, 255, 0.8);
     width: 100%;
-    bottom: -285px;
+    bottom: calc(100vh - 830px);
 }
 
-.mainNav-sec .panel,
-.mainNav-sec .panel-heading,
-.mainNav-sec .list-group-item {
+.dropUp .panel,
+.dropUp .panel-heading,
+.dropUp .list-group-item {
     border: 0;
     border-color: none;
     background-color: transparent;
