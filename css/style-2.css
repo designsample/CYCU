@@ -3,7 +3,7 @@
 /*For All*/
 *,
 label {
-    font-size: 15px;
+    font-size: 16px;
     font-family: "WenQuanYi Zen Hei", "文泉驛正黑", "Heiti TC", "黑體-繁", "LiHei Pro", "儷黑 Pro", "PingFang TC", "Droid Sans", "Roboto", "Microsoft JhengHei", "微軟正黑體", sans-serif;
 }
 
@@ -63,6 +63,7 @@ a.color3:focus {
     -webkit-border-radius: 0;
     height: 42px;
     border: 1px solid #ED7D0B;
+    font-size: 16px;
 }
 
 .indexTop-searchGroup .input-group .input-group-btn select {
@@ -80,6 +81,7 @@ a.color3:focus {
     background-position: 96% 50%;
     background-repeat: no-repeat;
     background-size: 11px;
+    font-size: 16px;
 }
 
 .indexTop-searchGroup button {
@@ -175,7 +177,9 @@ a.color3:focus {
 .pv-30 {
     padding: 30px 0;
 }
-
+.pv-20 {
+    padding: 20px 0;
+}
 .m-0 {
     margin: 0;
 }
@@ -337,13 +341,15 @@ body {
 
 .index-Calander ul li {
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 900;
+    -webkit-font-smoothing: auto;
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Microsoft Jhenghei',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
 }
 
 .index-bgCalander::before {}
 
 h3.active {
-    margin: 10px 0 7px 0;
+    margin: 5px 0 0 0;
     font-size: 22px;
     color: #A74624;
     font-weight: bold;
@@ -419,6 +425,10 @@ h3.active {
     width: 100%;
     height: auto;
 }
+.indexNews h3.active{
+    font-size: 54px;
+    padding-bottom: 15px;
+}
 
 .carousel-control.left,
 .carousel-control.right {
@@ -460,13 +470,16 @@ h3.active {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.index-fatFooter .title{
+    margin-bottom: 8px;
+}
 
 .index-fatFooter .list-unstyled {
-    padding: 10px;
+    padding: 0px;
 }
 
 .index-fatFooter ul li {
-    padding:10px 30px;
+    padding:3px 0;
 }
 
 .index-fatFooter ul li a {
@@ -694,6 +707,7 @@ footer {
         background: rgba(248, 248, 248, 1);
         border-bottom-color: #fc8f35;
         margin-bottom: 0;
+        padding-right: 30px;
     }
 
     nav.navbar.index .navbar-right-lg.topMenu {
@@ -701,12 +715,12 @@ footer {
         clear: both;
         right: 0px;
         float: right !important;
-        padding: 2.5px;
         position: absolute;
         top: 0;
         width: 100%;
         background: #fc8f35;
         margin-bottom: 10px;
+        padding-right: 15px;
     }
 
     nav.navbar.index .navbar-right-lg.topMenu li {
@@ -715,8 +729,8 @@ footer {
 
     nav.navbar.index .navbar-right-lg.topMenu li a {
         color: #FFF !Important;
-        padding: 5px 15px;
-
+        padding: 5px 8px;
+        font-size: 10px;
     }
 
     .navbar-right.viewById {
@@ -724,7 +738,7 @@ footer {
         clear: both;
         right: 15px;
         position: absolute;
-        top: 140px !important;
+        top: 137px !important;
         /*color: #ED7D0B;*/
     }
 
@@ -738,7 +752,7 @@ footer {
     }
 
     nav.navbar.index {
-        height: 200px;
+        height: 180px;
         position: relative;
     }
 
@@ -764,13 +778,15 @@ footer {
     .indexTop-searchGroup {
         top: 54px;
         left: 600px !important;
-        width: 700px;
+        padding: 0;
+        margin: 0;
     }
 
     .mainImg {
         width: 100%;
-        height: 630px;
+        /*height: 630px;*/
         overflow: hidden;
+        height: calc(100vh - 240px);
     }
 
     .mainImg img {
@@ -835,14 +851,17 @@ footer {
         font-weight: bold;
         font-size: 40px;
     }
-
+    .mainNav-first>div>.panel-heading>h4>a{
+        font-size: 15px;
+    }
 
 }
 
 
 @media screen and (min-width: 992px) {
     .navbar-default .navbar-nav>li>a {
-        padding: 10px 15px;
+        padding: 10px 8px;
+        font-size: 16px;
     }
 
     .navLink-A {
@@ -954,7 +973,7 @@ footer {
     .indexTop-searchGroup {
         float: none;
         left: 441px;
-        top: -40px;
+        top: -45px;
         clear: both;
     }
 
@@ -969,7 +988,7 @@ footer {
     .navbar-default.index .navbar-brand {
         padding-top: 9px;
         margin-top: 45px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     #mainNav_dropup {
@@ -1026,6 +1045,10 @@ footer {
     .index_footerSub .container {
         width: 1200px;
     }
+    .mainNav-first>div>.panel-heading>h4>a {
+    font-size: 22px;
+}
+
 
 
 }
@@ -1045,11 +1068,14 @@ footer {
 #collapse3,
 #collapse4 {
     position: absolute;
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
     width: 100%;
-    bottom: calc(100vh - 830px);
+    bottom:9vh;/*calc(100vh - 522px);*/
+    z-index: 9999;
 }
-
+.dropUp>.collapse>.container{
+    background:rgba(255, 255, 255, 0.8);
+}
 .dropUp .panel,
 .dropUp .panel-heading,
 .dropUp .list-group-item {
@@ -1059,12 +1085,16 @@ footer {
     color: #be4709;
     font-weight: 700;
 }
+.dropUp .panel h4.title{
+    margin: 15px 15px 5px 15px; 
+}
 .panel-default a.list-group-item/*:hover,
 .panel-default a.list-group-item:focus,
 .panel-default a.list-group-item:active*/
 {
     background-color: transparent;
     color: #be4709;
+    padding: 2px 15px;
 }
 .panel-default a.list-group-item:hover,
 .panel-default a.list-group-item:focus,
@@ -1092,11 +1122,9 @@ footer {
     border-radius: 0;
     border-left: 1px solid #ffffff;
 }
-
 .mainNav-first>div>.panel-heading>h4>a {
     color: #fff;
     font-weight: 700;
-    font-size: 22px;
     padding:15px;
 }
 
@@ -1109,6 +1137,6 @@ footer {
 }
 
 .mainNav-first>div {
-    width: 960px;
+   /* width: 960px;*/
     margin: 0 auto;
 }
