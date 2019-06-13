@@ -1082,6 +1082,7 @@ footer {
 .dropUp>.collapse>.container{
     background:rgba(255, 255, 255, 0.8);
     padding-top: 10px;
+    border-radius: 7px;
 }
 .dropUp .panel,
 .dropUp .panel-heading,
