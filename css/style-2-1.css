@@ -15,6 +15,7 @@ a {
 a:hover,
 a:focus {
     color: #333333;
+    text-decoration: none;
 }
 
 a.color2 {
@@ -28,8 +29,8 @@ a.color2:focus {
     color: #be4709 !important;
     /*#ea5923*/
     border: 1px solid #777777;
-    text-decoration: underline !important;
-    text-decoration-color: #ea5923 !important;
+    text-decoration: none ;
+ /*   text-decoration-color: #ea5923 !important;*/
 
 }
 
@@ -1094,23 +1095,52 @@ footer {
 }
 
 .dropUp .panel h4.title{
-    margin: 0px 15px 5px 15px;
+    margin: 0px 0 5px 0;
+    font-size: 19px;
 }
+
+.panel-default a.list-group-item{
+    padding: 10px 0;
+}
+.panel-default a.list-group-item::before {
+    color: #000;
+}
+.panel-default a.list-group-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #be4709;
+    transition: width .3s;
+}
+
+.panel-default a.list-group-item:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+
+
+
 .panel-default a.list-group-item/*:hover,
 .panel-default a.list-group-item:focus,
 .panel-default a.list-group-item:active*/
 {
     background-color: transparent;
-    color: #000000;
-    padding: 2px 15px;
+    width: 100%;
+    color: #323232;
+    padding: 2px 0;
+
 }
 .panel-default a.list-group-item:hover,
 .panel-default a.list-group-item:focus,
 .panel-default a.list-group-item:active
 {
-    background-color: #be4709;
-    color: #ffffff;
+    color: #be4709;
+    background-color: transparent;
+
 }
+
 .panel-default>h4.title a{
     font-size: 20px;
     color: #be4709;
