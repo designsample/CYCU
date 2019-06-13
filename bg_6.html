@@ -23,6 +23,7 @@
     <![endif]-->
     <!--  <script language="JavaScript">
       var imagesArray = ["bg_0.jpg", "bg_1.jpg", "bg_2.jpg", "bg_3.jpg"];
+
 function displayImage(){
     var num = Math.floor(Math.random() * 4); // 0...3
     document.canvas.src = 'img/'+ imagesArray[num];
@@ -35,10 +36,10 @@ body onload="displayImage();" value="Display Random Image"
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <style type="text/css">
-    .parallaxB {
-        /* The image used */
-        background-image: url("img/bg_1.jpg") !important;
-    }
+      .parallaxB {
+    /* The image used */
+    background-image: url("img/bg_1.jpg")!important;
+  }
     </style>
 </head>
 
@@ -156,206 +157,59 @@ body onload="displayImage();" value="Display Random Image"
             </ul>
         </div>
     </nav>
-    <section class="mainImg">
-        <img src="img/bg_0.jpg">
-    </section>
-    <section class="pv-30">
-        <div class="container-fluid mainNav-wrap2 p-0">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default mt-0 mainNav-first">
-                    <div>
-                        <div class="panel-heading col-xs-3" role="tab" id="heading1">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                    研究資源
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="panel-heading col-xs-3" role="tab" id="heading2">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    參考諮詢
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="panel-heading col-xs-3" role="tab" id="heading3">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    服務項目
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="panel-heading col-xs-3" role="tab" id="heading4">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    關於本館
-                                </a>
-                            </h4>
-                        </div>
+  <section class="mainImg">
+    <img src="img/bg_0.jpg">
+  </section>
+  <section>
+    <div class="container-fluid pv-30">
+      <div id="mainNav_dropup" class="w-100" style="">
+            <div class="btn-group-wrap">
+                <div id="mainNav_dropupBtn" class="btn-group dropup mainNav-wrap" role="group" aria-label="向上顯示">
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-mainNav">
+                            <p>研究資源</p>
+                        </a>
                     </div>
-                    <div id="collapse1" class="mainNav-sec panel-collapse collapsing" role="tabpanel" aria-labelledby="heading1">
-                        <div class="container">
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-1
-                                    </a>
-                                </h4>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                </div>
-                            </div>
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-2
-                                    </a>
-                                </h4>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                </div>
-                            </div>
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-3
-                                    </a>
-                                </h4>
-                            </div>
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-4
-                                    </a>
-                                </h4>
-                            </div>
-                        </div>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-mainNav">
+                            <p>參考諮詢</p>
+                        </a>
                     </div>
-                    <div id="collapse2" class="mainNav-sec panel-collapse collapsing" role="tabpanel" aria-labelledby="heading2">
-                        <div class="container">
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-1
-                                    </a>
-                                </h4>
-                            </div>
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-2
-                                    </a>
-                                </h4>
-                            </div>
-                        </div>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-mainNav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>服務項目</p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">項目一</a></li>
+                            <li><a href="#">項目二</a></li>
+                            <li><a href="#">項目三</a></li>
+                            <li><a href="#">項目四</a></li>
+                            <li><a href="#">項目五</a></li>
+                            <li><a href="#">項目六</a></li>
+                        </ul>
                     </div>
-                    <div id="collapse3" class="mainNav-sec panel-collapse collapsing" role="tabpanel" aria-labelledby="heading3">
-                        <div class="container">
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-1
-                                    </a>
-                                </h4>
-                            </div>
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-2
-                                    </a>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="collapse4" class="mainNav-sec panel-collapse collapsing" role="tabpanel" aria-labelledby="heading4">
-                        <div class="container">
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-1
-                                    </a>
-                                </h4>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">第三層</a>
-                                </div>
-
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-5
-                                    </a>
-                                </h4>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                </div>
-
-
-
-
-                            </div>
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-2
-                                    </a>
-                                </h4>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                </div>
-
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-6
-                                    </a>
-                                </h4>
-                            </div>
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-3
-                                    </a>
-                                </h4>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                </div>
-                            </div>
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                <h4 class="title">
-                                    <a href="">
-                                        第二層2-4
-                                    </a>
-                                </h4>
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                    <a href="#" class="list-group-item">第三層</a>
-                                </div>
-                            </div>
-                            <!-- <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                
-                            </div>
-                            <div class="panel panel-default col-xs-12 col-md-6 col-lg-3 mt-0">
-                                
-                            </div> -->
-                        </div>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-mainNav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p>關於本館</p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">項目一</a></li>
+                            <li><a href="#">項目二</a></li>
+                            <li><a href="#">項目三</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <!-- /end of btn-group-wrap-->
         </div>
-    </section>
+        <!-- /end of id="mainNav_dropup" class="w-100"-->
+      </div>
+    <!-- end of class="container-fluid" -->
+  </section>
+    
+        
+        
+    
     <section class="index-Calander">
         <div class="container">
             <div class="row">
@@ -385,8 +239,8 @@ body onload="displayImage();" value="Display Random Image"
                     </ul>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <a class="btn-gran" href="">圖書館行事曆</a>
-                    <a class="btn-gran" href="">詳細開館時間</a>
+                  <a class="btn-gran" href="">圖書館行事曆</a>
+                  <a class="btn-gran" href="">詳細開館時間</a>
                 </div>
             </div>
         </div>
@@ -425,22 +279,23 @@ body onload="displayImage();" value="Display Random Image"
                     </a>
                 </div>
                 <div class="w-100 text-right"><a href="" class="color3">more</a></div>
+
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-4 indexNews">
                 <h3 class="active m-0 mb-10">最新消息</h3>
                 <ul class="list-unstyled">
                     <li><a href="">2019/04/02
-                            <p>【公告】108年04月22日地球日，圖書館閉館一日</p></a></li>
+                    <p>【公告】108年04月22日地球日，圖書館閉館一日</p></a></li>
                     <li><a href="">2019/04/01
-                            <p class="m-0">看見友善，熱情與專業：歡迎一起分享「臺灣圖書館員形象片」微電影</p></a></li>
+                    <p class="m-0">看見友善，熱情與專業：歡迎一起分享「臺灣圖書館員形象片」微電影</p></a></li>
                     <li><a href="">2019/03/31
-                            <p>【公告】EndNote X9基礎級講習錄影檔已經上線，歡迎利用</p></a></li>
+                    <p>【公告】EndNote X9基礎級講習錄影檔已經上線，歡迎利用</p></a></li>
                     <li><a href="">2019/03/27
-                            <p>【公告】 IEEE Xplore推出行動載具連線服務，歡迎多加利用</p></a></li>
+                    <p>【公告】 IEEE Xplore推出行動載具連線服務，歡迎多加利用</p></a></li>
                     <li><a href="">2019/03/22
-                            <p>【公告】108年04月01日愚人節，圖書館閉館一日</p></a></li>
+                    <p>【公告】108年04月01日愚人節，圖書館閉館一日</p></a></li>
                     <li><a href="">2019/03/17
-                            <p>圖書館總管除蟲消毒作業，休館一天</p></a></li>
+                    <p>圖書館總管除蟲消毒作業，休館一天</p></a></li>
                     <li class="text-right"><a href="" class="color3">more</a></li>
                 </ul>
             </div>
@@ -601,78 +456,58 @@ body onload="displayImage();" value="Display Random Image"
     </div>
     <!-- index carousel -->
     <section class="index-fatFooter">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <div class="title text-center" style="border-bottom: 3px solid rgb(116,42,36);font-size:24px;font-weight:bold;padding:10px 0;color:rgb(116,42,36);">研究資源</div>
-                    <ul class="list-unstyled">
-                        <li><a href="">資源探索服務</a></li>
-                        <li><a href="">資料庫</a></li>
-                        <li><a href="">電子期刊</a></li>
-                        <li><a href="">電子書</a></li>
-                        <li><a href="">中原博碩士論文</a></li>
-                    </ul>
-                </div>
-                <!-- 分項 -->
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <div class="title text-center" style="border-bottom: 3px solid rgb(120,43,139);font-size:24px;font-weight:bold;padding:10px 0;color:rgb(120,43,139);">參考諮詢</div>
-                    <ul class="list-unstyled">
-                        <li><a href="">資源利用推廣</a></li>
-                        <li><a href="">教師指定參考書申請</a></li>
-                        <li><a href="">線上諮詢台</a></li>
-                        <li><a href="">常問問題</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <div class="title text-center" style="border-bottom: 3px solid rgb(190,71,9);font-size:24px;font-weight:bold;padding:10px 0;color:rgb(190,71,9);">服務項目</div>
-                    <ul class="list-unstyled">
-                        <li><a href="">借還書服務</a></li>
-                        <li><a href="">書刊薦購</a></li>
-                        <li><a href="">館際合作</a></li>
-                        <li><a href="">館際互借</a></li>
-                        <li><a href="">優久大學聯盟</a></li>
-                        <li><a href="">推廣活動</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <div class="title text-center" style="border-bottom: 3px solid rgb(134,100,40);font-size:24px;font-weight:bold;padding:10px 0;color:rgb(134,100,40)">關於本館</div>
-                    <ul class="list-unstyled">
-                        <li><a href="">樓層平面圖</a></li>
-                        <li><a href="">規則與辦法</a></li>
-                        <li><a href="">推廣活動</a></li>
-                        <li><a href="">智慧財產權</a></li>
-                        <li><a href="">募款專區</a></li>
-                        <li><a href="">電子報訂閱</a></li>
-                    </ul>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="title text-center" style="border-bottom: 3px solid rgb(116,42,36);font-size:24px;font-weight:bold;padding:10px 0;color:rgb(116,42,36);">研究資源</div>
+                <ul class="list-unstyled">
+                    <li class="text-center"><a href="">資源探索服務</a></li>
+                    <li class="text-center"><a href="">資料庫</a></li>
+                    <li class="text-center"><a href="">電子期刊</a></li>
+                    <li class="text-center"><a href="">電子書</a></li>
+                    <li class="text-center"><a href="">中原博碩士論文</a></li>
+                </ul>
+            </div>
+            <!-- 分項 -->
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="title text-center" style="border-bottom: 3px solid rgb(120,43,139);font-size:24px;font-weight:bold;padding:10px 0;color:rgb(120,43,139);">參考諮詢</div>
+                <ul class="list-unstyled">
+                    <li class="text-center"><a href="">資源利用推廣</a></li>
+                    <li class="text-center"><a href="">教師指定參考書申請</a></li>
+                    <li class="text-center"><a href="">線上諮詢台</a></li>
+                    <li class="text-center"><a href="">常問問題</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="title text-center" style="border-bottom: 3px solid rgb(190,71,9);font-size:24px;font-weight:bold;padding:10px 0;color:rgb(190,71,9);">服務項目</div>
+                <ul class="list-unstyled">
+                    <li class="text-center"><a href="">借還書服務</a></li>
+                    <li class="text-center"><a href="">書刊薦購</a></li>
+                    <li class="text-center"><a href="">館際合作</a></li>
+                    <li class="text-center"><a href="">館際互借</a></li>
+                    <li class="text-center"><a href="">優久大學聯盟</a></li>
+                    <li class="text-center"><a href="">推廣活動</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="title text-center" style="border-bottom: 3px solid rgb(134,100,40);font-size:24px;font-weight:bold;padding:10px 0;color:rgb(134,100,40)">關於本館</div>
+                <ul class="list-unstyled">
+                    <li class="text-center"><a href="">樓層平面圖</a></li>
+                    <li class="text-center"><a href="">規則與辦法</a></li>
+                    <li class="text-center"><a href="">推廣活動</a></li>
+                    <li class="text-center"><a href="">智慧財產權</a></li>
+                    <li class="text-center"><a href="">募款專區</a></li>
+                    <li class="text-center"><a href="">電子報訂閱</a></li>
+                </ul>
             </div>
         </div>
+    </div>
     </section>
     <!-- /index-fatFooter -->
     <section class="index_footerSub">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-lg-5 index_footerSubRight p-0">
-                    <ul class="list-unstyled  text-left">
-                        <li class="p-0" style="vertical-align: top">
-                            <a href="#" class="thumbnail"><img class="img-circle" title="臉書" src="img/ic_btn_fb.png"></a>
-                            <a href="#" class="thumbnail"><img class="img-circle" title="寄信給我們" src="img/ic_btn_mail.png"></a>
-                            <a href="#" class="thumbnail"><img class="img-circle" title="交通方式" src="img/ic_btn_map.png"></a>
-                            <a href="#" class="thumbnail"><img class="img-circle" title="訂閱電子報" src="img/ic_btn_epaper.png"></a>
-                            <!-- <a href="#" class="thumbnail"><img title="RSS訂閱" src="img/ic_btn_rss.png"></a> -->
-                        </li>
-                    </ul>
-                    <!-- /按鈕們 -->
-                    <div class="col-xs-12 p-0">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-2 p-0 text-center">
-                    <img src="img/bg_footer.png" width="72px" height="auto" style="display: inline-block;vertical-align: top;padding:0 10px 0 0">
-                    <p style="color: #ffffff">借還書服務:0000000</p>
-                    <p style="color: #ffffff">諮詢服務台:0000000</p>
-                    <a href="">版權聲明©</a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-5 p-0 text-right">
+                <div class="col-xs-12 col-sm-6">
                     <a href="#" class="thumbnail"><img src="img/qr_libr.png">
                         <p class="m-0">行動圖書館<br>Android</p>
                     </a>
@@ -686,23 +521,39 @@ body onload="displayImage();" value="Display Random Image"
                         <p class="m-0">自助借書<br>Ios</p>
                     </a>
                 </div>
+                <div class="col-xs-12 col-sm-6 index_footerSubRight">
+                    <ul class="list-unstyled  text-right">
+                        <li class="p-0" style="vertical-align: top">
+                            <a href="#" class="thumbnail"><img class="img-circle" title="臉書" src="img/ic_btn_fb.png"></a>
+                            <a href="#" class="thumbnail"><img class="img-circle" title="寄信給我們" src="img/ic_btn_mail.png"></a>
+                            <a href="#" class="thumbnail"><img class="img-circle" title="交通方式" src="img/ic_btn_map.png"></a>
+                            <a href="#" class="thumbnail"><img class="img-circle" title="訂閱電子報" src="img/ic_btn_epaper.png"></a>
+                            <!-- <a href="#" class="thumbnail"><img title="RSS訂閱" src="img/ic_btn_rss.png"></a> -->
+                        </li>
+                    </ul>
+                    <!-- /按鈕們 -->
+                    <div class="col-xs-12 p-0">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-xs-9 p-0">
-                    <p style="display: inline-block;color:white"><a href=""><img src="img/ic_map.png"></a>32023桃園市中壢區中北路200號 服務專線：(03)2652831<br>
-                        <a href=""><img src="img/ic_map.png"></a>200, Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C.<br>
-                        版權所有：中原大學張靜愚紀念圖書館 / Copyright ©Chung Yuan Christian University Library</p>
+                <div class="col-xs-9">
+                    <img src="img/bg_footer.png" width="72px" height="auto" style="display: inline-block;vertical-align: top;padding:0 10px 0 0">
+                    <p style="display: inline-block;color:white">地址：32023桃園市中壢區中北路200號<a href=""><img src="img/ic_map.png"></a> 服務專線：(03)2652831<br>
+                        Address：200, Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C.<a href=""><img src="img/ic_map.png"></a><br>
+                        版權所有：中原大學張靜愚紀念圖書館 / Copyright ©Chung Yuan Christian University Library
                 </div>
-                <div class="col-xs-3 p-0">
-                    <div class="text-right" style="vertical-align: top">
-                        <p style="font-size: 20px;font-weight:bold;color: #ffffff;">瀏覽人次</p>
-                        <p style="font-size: 20px;font-weight:bold;color: #ffffff">1234567899</p>
-                    </div>
+                <div class="col-xs-3">
+                <div class="text-right" style="vertical-align: top">
+                            <p style="font-size: 20px;font-weight:bold;color: #ffffff;">瀏覽人次</p>
+                            <p style="font-size: 20px;font-weight:bold;color: #ffffff">1234567899</p>
+                        </div>
                 </div>
+                
             </div>
         </div>
     </footer>
